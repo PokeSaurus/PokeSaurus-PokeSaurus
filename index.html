@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <br><br><br>
   <meta charset="UTF-8">
   <title>Pokesaurus: The Better Pokedex</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
@@ -10,19 +9,17 @@
 </head>
 
 <body>
-  <header>
+ <header>
     <div id="input-container">
-       <input id="search-input" placeholder="Search for IDs, names, abilities, types and more for over 600 different pokemon">
+       <input id="search-input" placeholder="Search for IDs, names, abilities, types and more for over 600 different pokemon
     </div>
   </header>
-  <main>
-      <div id="hits"></div>
-      <div id="pagination"></div>
   </main>
-
+<div id="hits"></div>
+<div id="pagination"></div>
+  </main>
   <script type="text/html" id="hit-template">
     <div class="hit">
-  
       <div class="hit-content">
         <h2 class="hit-name">{{{_highlightResult.name.value}}}</h2>
          <table>
@@ -77,6 +74,30 @@
             <th><h3 class="hit-evolutionReq">Evolution Requirement: {{evolutionReq}}</h3></th>
           </tr>
         </table>
+      </div>
+    </div>
+  </script>
+</body>
+  <div class= "welcome">
+    <h1>Pokesaurus</h1> <h2>"The Better Pokedex"</h2>
+  <main>
+      <div id="hits"></div>
+      <div id="pagination"></div>
+  </main>
+
+  <script type="text/html" id="hit-template">
+    <div class="hit">
+      <div class="hit-image">
+        <img src="{{image}}" alt="please wait while the image for {{name}} loads. Thank you for your patience">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-type1">Type 1: {{type1}}</h3>
+        <h3 class="hit-type2">Type 2: {{type2}}</h3>
+        <h3 class="hit-ID">ID#: {{ID}}</h3>
+        <h3 class="hit-tier">Tier: {{tier}}</h3>
+        <h3 class="hit-total-base-stats">Total Base Stats: {{totalBaseStats}}</h3>
+        <h2 class="hit-name">{{{_highlightResult.name.value}}}</h2>
+        <p class="hit-description">{{{_highlightResult.description.value}}}</p>
       </div>
     </div>
   </script>
