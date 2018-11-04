@@ -64,7 +64,7 @@ h3 {
   padding: 15px;
 }
 
-a.thick {
+p.thick {
   background-color: black;
   height: 10px;
   border-bottom: 100% solid #black;
