@@ -1,11 +1,8 @@
 const search = instantsearch({
   appId: 'Z98PBLKA4C',
-  apiKey: 'aeb766f8f0ff88f3d154063c447fae6a', // search only API key, no ADMIN key
+  apiKey: 'aeb766f8f0ff88f3d154063c447fae6a', // search only API key
   indexName: 'Pokesaurus',
-  urlSync: true,
-  searchParameters: {
-    hitsPerPage: 12
-  }
+  urlSync: true
 });
 
 search.addWidget(
@@ -17,9 +14,10 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.hits({
     container: '#hits',
+    hitsPerPage: 12,
     templates: {
       item: document.getElementById('hit-template').innerHTML,
-      empty: "We didn't find any results for the search: <em>\"{{query}}\"</em>"
+      empty: "We didn't find any results for the search <em>\"{{query}}\"</em>"
     }
   })
 );
@@ -29,21 +27,5 @@ search.addWidget(
     container: '#pagination'
   })
 );
-
-search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#type-refinement',
-      attributeName: ["type1","type2"]
-      templates: {
-        header: 'Type'
-      },
-      searchForFacetValues: {
-        placeholder: 'Search for brands',
-        templates: {
-          noResults: '<div class="sffv_no-results">No matching brands.</div>'
-        }
-      }
-    })
-  );
 
 search.start();
