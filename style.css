@@ -1,1 +1,103 @@
+body {
+  position: absolute;
+  margin: 0 auto;
+}
 
+header {
+  background-color: #5DADE2;
+  height: 50px;
+  border-bottom: 100% solid #5DADE2;
+  position: fixed;
+  width: 110%; 
+  z-index: 2;
+}
+
+.answer {
+  border: 1px white #466995;
+  margin: 1%;
+  display: inline-block;
+  color: white;
+  background-color: white;
+    opacity: 60%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 26.9%;
+  height: 27px;
+  
+  
+}
+.secondon {
+  border: 1px solid #466995;
+  margin: 1%;
+  display: inline-block;
+  color: #466995;
+  background-color: placeholder;
+    opacity: 60%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+  width: 26.9%;
+  height: 12%
+}
+
+
+.answer:hover {
+  background: #C0D6DF;
+  color: #FFF;
+  
+}
+.secondon:hover {
+  background: #C0D6DF;
+  color: #FFF;
+}
+
+#search-input{
+  margin:10px 25%;
+  width: 750px;
+  height: 30px;
+  color: red;
+  background-color: white
+}
+
+h1 {
+  color: crimson;
+  font-family: '', sans-serif;
+  font-size: 32px;
+  font-weight: ;
+  text-transform: uppercase;
+  font-size: 80
+}
+
+h2 {
+  color: #333;
+  font-family: 'Impact', sans-serif;
+  font-size: 40px;
+  font-weight: ;
+  margin: 0 auto 10px auto;
+}
+
+h3 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+.welcome {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
