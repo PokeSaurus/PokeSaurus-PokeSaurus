@@ -13,17 +13,8 @@ header {
   z-index: 2;
 }
 
-.answer:hover {
-  background: #C0D6DF;
-  color: #FFF;  
-}
-.secondon:hover {
-  background: #C0D6DF;
-  color: #FFF;
-}
-
 #search-input{
-  margin:10px 25%;
+  margin: 12px 70px;
   width: 750px;
   height: 30px;
   color: red;
@@ -41,8 +32,8 @@ h1 {
 h2 {
   color: #333;
   font-family: 'Impact', sans-serif;
-  font-size: 90px;
-  font-weight: ;
+  font-size: 150px;
+  font-weight: 10;
   margin: 0 auto 10px auto;
 }
 
