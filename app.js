@@ -29,12 +29,6 @@ search.addWidget(
 );
 
 search.addWidget(
-  instantsearch.widgets.stats({
-    container: '#stats-container'
-  })
-);
-
-search.addWidget(
   instantsearch.widgets.clearAll({
     container: '#clear-all',
     templates: {
@@ -88,3 +82,5 @@ search.addWidget(
 );
 
 search.start();
+
+
