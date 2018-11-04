@@ -28,10 +28,4 @@ search.addWidget(
   })
 );
 
-search.addWidget(
-  instantsearch.widgets.stats({
-    container: '#stats-container'
-  })
-);
-
 search.start();
