@@ -35,6 +35,17 @@ search.addWidget(
 );
 
 search.addWidget(
+  instantsearch.widgets.clearAll({
+    container: '#clear-all',
+    templates: {
+      link: 'Reset everything'
+    },
+    autoHideContainer: false,
+    clearsQuery: true,
+  })
+);
+
+search.addWidget(
     instantsearch.widgets.refinementList({
       container: '#type1||type2-refinement',
       attributeName: 'type',
@@ -77,5 +88,3 @@ search.addWidget(
 );
 
 search.start();
-
-
