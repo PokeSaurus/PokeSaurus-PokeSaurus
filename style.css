@@ -14,12 +14,17 @@ header {
 }
 
 #search-input{
-  margin: 12px 70px;
+  margin: 10px 70px;
   width: 750px;
   height: 30px;
   color: red;
   background-color: white
 }
+
+#input-container{
+  margin: 10px 70px;
+}
+
 
 h1 {
   color: black;
