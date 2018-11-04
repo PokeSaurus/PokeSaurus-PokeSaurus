@@ -28,11 +28,4 @@ search.addWidget(
   })
 );
 
- search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#refinement-list',
-      attributeName: 'type1',
-    })
-  );
-
 search.start();
