@@ -2,26 +2,28 @@
 <html>
 
 <head>
+  <br><br><br>
   <meta charset="UTF-8">
+  <title>Pokesaurus: The Better Pokedex</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
- <header>
+  <header>
     <div id="input-container">
-       <input id="search-input" placeholder="Search for IDs, names, abilities, types and more for over 600 different pokemon"
+       <input id="search-input" placeholder="Search for IDs, names, abilities, types and more for over 600 different pokemon">
     </div>
   </header>
+  <main>
+      <div id="hits"></div>
+      <div id="pagination"></div>
   </main>
-<div id="hits"></div>
-<div id="pagination"></div>
-  </main>
+
   <script type="text/html" id="hit-template">
     <div class="hit">
+  
       <div class="hit-content">
-        <h2></h2>
-        <h2></h2>
         <h2 class="hit-name">{{{_highlightResult.name.value}}}</h2>
          <table>
           <tr>
@@ -56,7 +58,6 @@
             <th><h3 class="hit-mass">Mass: {{mass}}kg</h3></th>
             <th></th>
             <th><h3 class="hit-total-base-stats">Total Base Stats: {{totalBaseStats}}</h3></th>
-            <th><h3"-------------------------------------------------------------------------------"</h3></th>
             <th></th>
           </tr>
           <tr>
@@ -80,7 +81,8 @@
     </div>
   </script>
 </body>
- 
+
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
 <script src="app.js"></script>
+
 </html>
