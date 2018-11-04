@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pokesaurus: The Better Pokedex</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="input-container">
+       <input id="search-input" placeholder="Search for ID, name, abilities, types and more">
+    </div>
+  </header>
+  <main>
+      <div id="hits"></div>
+      <div id="pagination"></div>
+  </main>
+
+  <script type="text/html" id="hit-template">
+    <div class="hit">
+      <div class="hit-image">
+        <img src="{{image}}" alt="please wait while the image for {{name}} loads. Thank you for your patience">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-type1">Type 1: {{type1}}</h3>
+        <h3 class="hit-type2">Type 2: {{type2}}</h3>
+        <h3 class="hit-ID">ID #: {{ID}}</h3>
+        <h3 class="hit-tier">Tier: {{tier}}</h3>
+        <h3 class="hit-total-base-stats">Total Base Stats: {{totalBaseStats}}</h3>
+        <h2 class="hit-name">{{{_highlightResult.name.value}}}</h2>
+        <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+      </div>
+    </div>
+  </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
+<script src="app.js"></script>
+
+</html>
