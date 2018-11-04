@@ -32,9 +32,10 @@ h1 {
 h2 {
   color: #333;
   font-family: 'Impact', sans-serif;
-  font-size: 150px;
+  font-size: 170px;
   font-weight: 10;
   margin: 0 auto 10px auto;
+  text-decoration: underline;
 }
 
 h3 {
