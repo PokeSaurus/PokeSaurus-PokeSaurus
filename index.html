@@ -35,6 +35,48 @@
       </div>
     </div>
   </script>
+
+<div id="search-box">
+  <!-- SearchBox widget will appear here -->
+</div>
+
+<div id="refinement-list">
+  <!-- RefinementList widget will appear here -->
+</div>
+
+<div id="hits">
+  <!-- Hits widget will appear here -->
+</div>
+
+<script>
+  const search = instantsearch(options);
+
+  // initialize RefinementList
+  search.addWidget(
+    instantsearch.widgets.refinementList({
+      container: '#refinement-list',
+      attributeName: 'categories'
+    })
+  );
+
+  // initialize SearchBox
+  search.addWidget(
+    instantsearch.widgets.searchBox({
+      container: '#search-box',
+      placeholder: 'Search for products'
+    })
+  );
+
+  // initialize hits widget
+  search.addWidget(
+    instantsearch.widgets.hits({
+      container: '#hits'
+    })
+  );
+
+  search.start();
+</script>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
