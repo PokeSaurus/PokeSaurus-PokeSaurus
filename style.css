@@ -63,3 +63,11 @@ h3 {
   position: relative;
   padding: 15px;
 }
+
+.thick {
+  background-color: black;
+  height: 10px;
+  border-bottom: 100% solid #black;
+  position: relative;
+  width: 100%; 
+}
