@@ -1,7 +1,17 @@
+<style>
 body {
   position: absolute;
   margin: 0 auto;
   width: 100%
+}
+
+.welcome {
+  background-color: red;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: relative;
 }
 
 header {
@@ -57,13 +67,4 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   padding: 30px;
-}
-
-.welcome {
-  background-color: red;
-  box-sizing: border-box;
-  padding: 40px;
-  text-align: center;
-  width: 100%;
-  position: relative;
 }
