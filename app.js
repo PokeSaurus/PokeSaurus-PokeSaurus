@@ -29,5 +29,3 @@ search.addWidget(
 );
 
 search.start();
-
-
